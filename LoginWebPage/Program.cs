@@ -27,7 +27,7 @@ namespace LoginWebPage
                 options.SignIn.RequireConfirmedEmail = false;
                 options.SignIn.RequireConfirmedPhoneNumber = false;
             });
-            //**
+            //***
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
