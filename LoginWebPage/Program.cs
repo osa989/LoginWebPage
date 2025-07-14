@@ -26,7 +26,9 @@ namespace LoginWebPage
                 options.SignIn.RequireConfirmedAccount = false;
                 options.SignIn.RequireConfirmedEmail = false;
                 options.SignIn.RequireConfirmedPhoneNumber = false;
-            });
+            })
+                .AddEntityFrameworkStores<AppDBContext>()
+               .AddDefaultTokenProviders();
             //***
             var app = builder.Build();
 
